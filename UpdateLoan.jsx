@@ -30,7 +30,7 @@ export class UpdateLoan extends Component {
         })
     }
 
-    updateloan = (e) => {
+    updateLoan = (e) => {
         e.preventDefault();
         let loan = {
             loanType: this.state.loanType,
@@ -67,25 +67,25 @@ export class UpdateLoan extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="card col-md-6 offset-md-3 offset-md-3">
-                            <h2>Edit loan</h2>
+                            <h2>Edit Loan</h2>
                         <div className="card-body">
                             <form>
                                 <div className="form-group">
-                                  <label >loan Name</label>
+                                  <label >Loan Name</label>
                                   <input type="text" name="loanType" id="" className="form-control" placeholder="Enter loanType" 
-                                   value={this.state.loanType} onChange={this.changeloanTypeHandler} />
+                                   value={this.state.loanType} onChange={this.changeLoanTypeHandler} />
                                 </div>
                                 <div className="form-group">
-                                  <label >loan Sal</label>
+                                  <label >Loan Sal</label>
                                   <input type="text" name="loanTerm" id="" className="form-control" placeholder="Enter loanTerm" 
-                                   value={this.state.loanTerm} onChange={this.changeloanTermHandler} />
+                                   value={this.state.loanTerm} onChange={this.changeLoanTermHandler} />
                                 </div>
                                 <div className="form-group">
                                   <label >loan Location</label>
                                   <input type="text" name="loanAmount" id="" className="form-control" placeholder="Enter loanAmount" 
-                                   value={this.state.loanAmount} onChange={this.changeloanAmountHandler} />
+                                   value={this.state.loanAmount} onChange={this.changeLoanAmountHandler} />
                                 </div>
-                                <button type="button" className="btn btn-success" onClick={this.updateloan}>Update</button>
+                                <button type="button" className="btn btn-success" onClick={this.updateLoan}>Update</button>
                                 <button type="button" className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft:"10px"}}>Cancel</button>
                             </form>
                         </div>
