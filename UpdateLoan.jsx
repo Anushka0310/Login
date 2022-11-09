@@ -1,6 +1,6 @@
 //import axios from "axios";
 import React, { Component } from "react";
-import loanService from "../services/LoanService";
+import LoanService from "../services/LoanService";
 
 export class UpdateLoan extends Component {
     constructor(props) {
