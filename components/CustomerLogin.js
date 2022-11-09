@@ -34,11 +34,11 @@ class CustomerLogin extends Component {
 
                 alert(" welcome " + this.state.cus[i].customerFirstName + " " + this.state.cus[i].customerLastName);
                 find = 1;
-                this.props.history.push("/FoodItem");
+                this.props.history.push("/getcustomer");
             }
         }
         if (find === 0) {
-            alert("Inavlid Username or Password");
+            alert("Inavlid Username or Password"); 
         }
 
 
